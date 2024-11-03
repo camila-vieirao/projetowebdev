@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - Carrossel de Materiais e Campanhas</title>
+    <link rel="stylesheet" href="fontawesome-free-web/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">CrazyCatGang<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home"><i class="fa-solid fa-house"></i> home</a>
+            <a href="#sobrenos"><i class="fa-solid fa-heart"></i> sobre nós</a>
+            <a href="#adote"><i class="fa-solid fa-cat"></i> adote</a>
+        </nav>
+        <div class="voluntario">
+            <a href="#sejavoluntario">seja voluntário</a>
+        </div>
+
+    </header>
+    <!-- Seção de Campanhas e Materiais -->
+    <div class="carousel">
+        <div class="slider" id="materiais">
+            <div class="slide active">
+                <div class="slide-content">
+                    <img src="img/esporotricose.png" alt="Material 1">
+                    <div class="description">
+                        <h2>Materiais Educativos</h2>
+                        <p>Encontre diversos materiais educativos para ajudar na sua formação.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="img/pqvacinar.png" alt="Material 2">
+                    <div class="description">
+                        <h2>Material Didático de Qualidade</h2>
+                        <p>Conteúdos preparados para garantir o melhor aprendizado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider" id="campanhas">
+            <div class="slide active">
+                <div class="slide-content">
+                    <img src="img/nana.png" alt="Campanha 1">
+                    <div class="description">
+                        <h2>Campanha de Solidariedade</h2>
+                        <p>Participe da nossa campanha para apoiar a educação de crianças.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="img/garfield.png" alt="Campanha 2">
+                    <div class="description">
+                        <h2>Doe Materiais</h2>
+                        <p>Ajude doando materiais para quem mais precisa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé com link para ser voluntário -->
+    <footer>
+        <a href="formulario.html" class="voluntario-button">Seja voluntário</a>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
+
