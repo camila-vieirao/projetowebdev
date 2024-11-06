@@ -24,11 +24,28 @@
         <h1 class="heading"><span>Seja </span> Voluntário</h1>
 
         <div class="row">
-            <form action="">
-                <input type="text" placeholder="Nome" class="box">
-                <input type="email" placeholder="E-mail" class="box">
-                <input type="number" placeholder="Telefone" class="box">
-                <textarea name="" class="box motivacao" placeholder="O que te motiva a fazer parte da nossa equipe?" id="" cols="30" rows="10"></textarea>
+            <form id="form_voluntario" enctype="multipart/form-data">
+                <input type="text" name="nome" placeholder="Nome" class="box" id="nome" required>
+                <input type="email" name="email" placeholder="E-mail" class="box" id="email" required>
+                <input type="tel" name="telefone" placeholder="Telefone" class="box" id="telefone" required>
+            
+                <select name="setor" class="box" id="setor" required>
+                    <option value="" disabled selected>Qual é o seu setor de preferência?</option>
+                    <option value="Financeiro">Financeiro</option>
+                    <option value="Logística">Logística</option>
+                    <option value="Atendimento Social">Atendimento Social</option>
+                    <option value="Resgate">Resgate</option>
+                    <option value="Comunicação">Comunicação</option>
+                    <option value="Lar temporário">Lar temporário</option>
+                </select>
+            
+                <textarea name="motivacao" class="box motivacao" placeholder="O que te motiva a fazer parte da nossa equipe?" id="motivacao" cols="30" rows="10" required></textarea>
+                <div class="box custom-file-upload">
+                    <label for="curriculo" class="btn-upload">Anexar Currículo</label>
+                    <span id="file-name">Nenhum arquivo selecionado</span>
+                    <input type="file" id="curriculo" name="curriculo" accept="application/pdf" required>
+                </div>
+            
                 <input type="submit" value="Concluir" class="btn">
             </form>
 
@@ -38,6 +55,6 @@
         </div>
     </section>
 
-    <script src="index/js/index.js"></script>
+    <script src="voluntario/js/voluntario.js"></script>
 </body>
 </html>

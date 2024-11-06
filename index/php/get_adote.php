@@ -1,11 +1,5 @@
 <?php
-header('Content-Type: application/json');
-
-$conn = new mysqli("localhost", "root", "1234", "projetoweb");
-
-if ($conn->connect_error) {
-    die(json_encode(["error" => "Falha na conexão: " . $conn->connect_error]));
-}
+include '../../config.php';
 
 $result = $conn->query("SELECT * FROM adote");
 
